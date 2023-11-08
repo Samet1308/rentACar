@@ -1,0 +1,41 @@
+package kodlama.io.rentACar.business.requests.create;
+
+import jakarta.persistence.Column;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CreateCarRequest {
+
+    @NotNull
+    @NotBlank
+    private int modelId;
+
+    @NotNull
+    @NotBlank
+    private  String plate;
+
+    @NotNull
+    @NotBlank
+    private double dailyPrice;
+
+    @NotNull
+    @NotBlank
+    private int modelYear;
+
+    @NotNull
+    @NotBlank
+    private int state;
+
+    @NotNull
+    @NotBlank
+    private int colorId;
+
+
+
+}

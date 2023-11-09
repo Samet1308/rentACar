@@ -1,7 +1,7 @@
 package kodlama.io.rentACar.business.abstracts;
 
-import kodlama.io.rentACar.business.requests.create.CreateColorRequest;
-import kodlama.io.rentACar.business.responses.GetAllColorResponse;
+import kodlama.io.rentACar.business.requests.color.CreateColorRequest;
+import kodlama.io.rentACar.business.responses.color.GetAllColorResponse;
 
 import java.util.List;
 

@@ -2,8 +2,8 @@ package kodlama.io.rentACar.webApi.controllers;
 
 import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.ModelService;
-import kodlama.io.rentACar.business.requests.create.CreateModelRequest;
-import kodlama.io.rentACar.business.responses.GetAllModelsResponse;
+import kodlama.io.rentACar.business.requests.model.CreateModelRequest;
+import kodlama.io.rentACar.business.responses.model.GetAllModelsResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

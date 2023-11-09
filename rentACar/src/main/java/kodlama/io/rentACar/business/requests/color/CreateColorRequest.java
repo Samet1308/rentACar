@@ -1,20 +1,16 @@
-package kodlama.io.rentACar.business.responses;
+package kodlama.io.rentACar.business.requests.color;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import kodlama.io.rentACar.entities.concretes.Color;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllColorResponse {
+@Data
+public class CreateColorRequest {
 
-    @NotBlank
     @NotNull
     private int colorId;
 
@@ -22,7 +18,6 @@ public class GetAllColorResponse {
     @NotNull
     private String colorName;
 
-    @NotBlank
-    @NotNull
-    private int carId;
+
+
 }

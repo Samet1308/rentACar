@@ -3,9 +3,9 @@ package kodlama.io.rentACar.webApi.controllers;
 
 import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.BrandService;
-import kodlama.io.rentACar.business.requests.create.CreateBrandRequest;
-import kodlama.io.rentACar.business.requests.update.UpdateBrandRequest;
-import kodlama.io.rentACar.business.responses.GetAllBrandsResponse;
+import kodlama.io.rentACar.business.requests.brand.CreateBrandRequest;
+import kodlama.io.rentACar.business.requests.brand.UpdateBrandRequest;
+import kodlama.io.rentACar.business.responses.brand.GetAllBrandsResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

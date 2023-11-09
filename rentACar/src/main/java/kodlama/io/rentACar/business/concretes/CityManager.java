@@ -1,8 +1,8 @@
 package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.abstracts.CityService;
-import kodlama.io.rentACar.business.requests.create.CreateCityRequest;
-import kodlama.io.rentACar.business.responses.GetAllCityResponse;
+import kodlama.io.rentACar.business.requests.city.CreateCityRequest;
+import kodlama.io.rentACar.business.responses.city.GetAllCityResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.CityRepository;
 import kodlama.io.rentACar.entities.concretes.City;

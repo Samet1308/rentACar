@@ -1,6 +1,5 @@
-package kodlama.io.rentACar.business.responses;
+package kodlama.io.rentACar.business.requests.car;
 
-import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -10,27 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllCarResponse {
-    @Id
-    @NotNull
-    @NotBlank
-    private int id;
-
-    @NotNull
-    @NotBlank
-    private  String brandName;
-
-    @NotNull
-    @NotBlank
-    private String modelName;
+public class CreateCarRequest {
 
     @NotNull
     @NotBlank
     private int modelId;
-
-    @NotNull
-    @NotBlank
-    private int modelYear;
 
     @NotNull
     @NotBlank
@@ -42,9 +25,16 @@ public class GetAllCarResponse {
 
     @NotNull
     @NotBlank
+    private int modelYear;
+
+    @NotNull
+    @NotBlank
     private int state;
 
     @NotNull
     @NotBlank
     private int colorId;
+
+
+
 }

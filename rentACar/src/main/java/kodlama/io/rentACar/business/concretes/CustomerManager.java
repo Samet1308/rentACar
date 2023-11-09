@@ -1,8 +1,8 @@
 package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.abstracts.CustomerService;
-import kodlama.io.rentACar.business.requests.create.CreateCustomerRequest;
-import kodlama.io.rentACar.business.responses.GetAllCustomersResponse;
+import kodlama.io.rentACar.business.requests.customer.CreateCustomerRequest;
+import kodlama.io.rentACar.business.responses.customer.GetAllCustomersResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.CustomerRepository;
 import kodlama.io.rentACar.entities.concretes.Customer;
@@ -30,7 +30,7 @@ public class CustomerManager implements CustomerService {
     }
     @Override
     public void add(CreateCustomerRequest createCustomerRequest){
-        Customer customer = this.modelMapperService.forResponse().map(createCustomerRequest, Customer.class);
+        Customer customer = this.modelMapperService.forRequest().map(createCustomerRequest, Customer.class);
         this.customerRepository.save(customer);
     }
 }

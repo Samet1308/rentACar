@@ -1,4 +1,5 @@
-package kodlama.io.rentACar.business.responses;
+package kodlama.io.rentACar.business.responses.brand;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +8,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllCityResponse {
-    private int cityId;
-    private String cityName;
-
+public class GetAllBrandsResponse {
+    private int id;
+    private String name;
 
 }

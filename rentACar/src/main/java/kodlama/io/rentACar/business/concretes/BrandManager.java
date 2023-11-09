@@ -2,10 +2,10 @@ package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.rules.BrandBusinessRules;
 import kodlama.io.rentACar.business.abstracts.BrandService;
-import kodlama.io.rentACar.business.requests.create.CreateBrandRequest;
-import kodlama.io.rentACar.business.requests.update.UpdateBrandRequest;
-import kodlama.io.rentACar.business.responses.GetAllBrandsResponse;
-import kodlama.io.rentACar.business.responses.GetByIdBrandsResponse;
+import kodlama.io.rentACar.business.requests.brand.CreateBrandRequest;
+import kodlama.io.rentACar.business.requests.brand.UpdateBrandRequest;
+import kodlama.io.rentACar.business.responses.brand.GetAllBrandsResponse;
+import kodlama.io.rentACar.business.responses.brand.GetByIdBrandsResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.BrandRepository;
 import kodlama.io.rentACar.entities.concretes.Brand;

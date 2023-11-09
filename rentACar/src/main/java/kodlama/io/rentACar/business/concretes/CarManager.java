@@ -1,8 +1,8 @@
 package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.abstracts.CarService;
-import kodlama.io.rentACar.business.requests.create.CreateCarRequest;
-import kodlama.io.rentACar.business.responses.GetAllCarResponse;
+import kodlama.io.rentACar.business.requests.car.CreateCarRequest;
+import kodlama.io.rentACar.business.responses.car.GetAllCarResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.CarRepository;
 import kodlama.io.rentACar.entities.concretes.Car;

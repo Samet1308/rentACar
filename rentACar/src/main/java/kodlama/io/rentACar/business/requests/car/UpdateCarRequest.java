@@ -1,4 +1,4 @@
-package kodlama.io.rentACar.business.requests.delete;
+package kodlama.io.rentACar.business.requests.car;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DeleteCarRequest {
+public class UpdateCarRequest {
     private int id;
 }

@@ -3,6 +3,7 @@ package kodlama.io.rentACar.webApi.controllers;
 import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.CityService;
 import kodlama.io.rentACar.business.requests.city.CreateCityRequest;
+import kodlama.io.rentACar.business.requests.city.UpdateCityRequest;
 import kodlama.io.rentACar.business.responses.city.GetAllCityResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -26,6 +27,16 @@ public class CityController {
     @ResponseStatus(code= HttpStatus.CREATED)
     public void add(@RequestBody @Valid CreateCityRequest createCityRequest){
         this.cityService.add(createCityRequest);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id){
+        this.cityService.delete(id);
+    }
+
+    @PutMapping()
+    public void update(UpdateCityRequest updateCityRequest){
+        this.cityService.update(updateCityRequest);
     }
 }
 

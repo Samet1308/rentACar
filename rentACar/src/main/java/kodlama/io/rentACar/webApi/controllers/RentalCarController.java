@@ -5,13 +5,11 @@ import kodlama.io.rentACar.business.abstracts.CustomerService;
 import kodlama.io.rentACar.business.abstracts.RentalCarService;
 import kodlama.io.rentACar.business.requests.customer.CreateCustomerRequest;
 import kodlama.io.rentACar.business.requests.rentalCar.CreateRentalCarRequest;
+import kodlama.io.rentACar.business.requests.rentalCar.UpdateRentalCarRequest;
 import kodlama.io.rentACar.business.responses.customer.GetAllCustomersResponse;
 import kodlama.io.rentACar.business.responses.rentalCar.GetAllRentalCarResponse;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,5 +26,15 @@ public class RentalCarController {
     @ResponseStatus(code= HttpStatus.CREATED)
     public void add(@RequestBody @Valid CreateRentalCarRequest rentalCarRequest){
         this.rentalCarService.add(rentalCarRequest);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id){
+        this.rentalCarService.delete(id);
+    }
+
+    @PutMapping()
+    public void update(@RequestBody UpdateRentalCarRequest updateRentalCarRequest){
+        this.rentalCarService.update(updateRentalCarRequest);
     }
 }

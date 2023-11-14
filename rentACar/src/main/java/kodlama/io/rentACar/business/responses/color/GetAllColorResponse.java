@@ -22,7 +22,4 @@ public class GetAllColorResponse {
     @NotNull
     private String colorName;
 
-    @NotBlank
-    @NotNull
-    private int carId;
 }

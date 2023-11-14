@@ -62,7 +62,6 @@ public class BrandManager implements BrandService {
     }
     @Override
     public void delete(@PathVariable int id) {
-
         this.brandRepository.deleteById(id);
     }
 }

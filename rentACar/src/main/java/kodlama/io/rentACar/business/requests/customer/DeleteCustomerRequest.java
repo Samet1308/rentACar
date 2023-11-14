@@ -13,5 +13,5 @@ public class DeleteCustomerRequest {
 
     @NotNull
     @NotBlank
-    private String customerId;
+    private int customerId;
 }

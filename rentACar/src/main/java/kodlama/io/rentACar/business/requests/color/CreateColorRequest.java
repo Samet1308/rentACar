@@ -11,9 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class CreateColorRequest {
 
-    @NotNull
-    private int colorId;
-
     @NotBlank
     @NotNull
     private String colorName;

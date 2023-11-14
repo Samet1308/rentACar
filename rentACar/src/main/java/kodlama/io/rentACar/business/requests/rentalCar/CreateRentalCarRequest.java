@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreateRentalCarRequest {
 
-    private int rentCa;
+    private int rentCar;
 }

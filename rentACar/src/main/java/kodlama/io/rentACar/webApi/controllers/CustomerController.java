@@ -1,8 +1,10 @@
 package kodlama.io.rentACar.webApi.controllers;
 
+import jakarta.validation.Path;
 import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.CustomerService;
 import kodlama.io.rentACar.business.requests.customer.CreateCustomerRequest;
+import kodlama.io.rentACar.business.requests.customer.UpdateCustomerRequest;
 import kodlama.io.rentACar.business.responses.customer.GetAllCustomersResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -26,5 +28,13 @@ public class CustomerController {
     @ResponseStatus(code= HttpStatus.CREATED)
     public void add(@RequestBody @Valid CreateCustomerRequest createCustomerRequest){
         this.customerService.add(createCustomerRequest);
+    }
+
+    public void delete(@PathVariable int id){
+        this.customerService.delete(id);
+    }
+
+    public void update (@RequestBody UpdateCustomerRequest updateCustomerRequest){
+        this.customerService.update(updateCustomerRequest);
     }
 }

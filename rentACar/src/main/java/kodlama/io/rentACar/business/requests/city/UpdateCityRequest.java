@@ -14,4 +14,6 @@ public class UpdateCityRequest {
     @NotNull
     @NotBlank
     private int cityId;
+
+    private String cityName;
 }

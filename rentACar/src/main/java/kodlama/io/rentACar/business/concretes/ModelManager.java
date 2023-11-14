@@ -2,12 +2,14 @@ package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.abstracts.ModelService;
 import kodlama.io.rentACar.business.requests.model.CreateModelRequest;
+import kodlama.io.rentACar.business.requests.model.UpdateModelRequest;
 import kodlama.io.rentACar.business.responses.model.GetAllModelsResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.ModelRepository;
 import kodlama.io.rentACar.entities.concretes.Model;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,7 +36,16 @@ public class ModelManager implements ModelService {
         this.modelRepository.save(model);
     }
 
-    public void delete(int id){
+    @Override
+    public void delete(@PathVariable int id){
         this.modelRepository.deleteById(id);
     }
+
+    @Override
+    public void update(UpdateModelRequest updateModelRequest){
+        Model model = this.modelMapperService.forRequest().map(updateModelRequest, Model.class);
+        this.modelRepository.save(model);
+    }
 }
+
+

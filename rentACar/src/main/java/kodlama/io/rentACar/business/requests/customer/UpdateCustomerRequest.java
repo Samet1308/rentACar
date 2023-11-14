@@ -14,5 +14,7 @@ public class UpdateCustomerRequest {
 
     @NotNull
     @NotBlank
-    private String customerId;
+    private int customerId;
+
+    private String customerName;
 }

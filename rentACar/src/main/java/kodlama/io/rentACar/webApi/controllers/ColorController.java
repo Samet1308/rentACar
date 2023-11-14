@@ -3,6 +3,7 @@ package kodlama.io.rentACar.webApi.controllers;
 import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.ColorService;
 import kodlama.io.rentACar.business.requests.color.CreateColorRequest;
+import kodlama.io.rentACar.business.requests.color.UpdateColorRequest;
 import kodlama.io.rentACar.business.responses.color.GetAllColorResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -21,8 +22,18 @@ public class ColorController {
     }
 
     @PostMapping()
-    public void add(@Valid @RequestBody CreateColorRequest createColorRequest){
+    public void add(@RequestBody @Valid CreateColorRequest createColorRequest){
         this.colorService.add(createColorRequest);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id){
+        this.colorService.delete(id);
+    }
+
+    @PutMapping()
+    public void update(@RequestBody UpdateColorRequest updateColorRequest){
+        this.colorService.update(updateColorRequest);
     }
 
 }

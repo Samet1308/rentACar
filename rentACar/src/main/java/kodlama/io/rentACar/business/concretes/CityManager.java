@@ -2,12 +2,14 @@ package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.abstracts.CityService;
 import kodlama.io.rentACar.business.requests.city.CreateCityRequest;
+import kodlama.io.rentACar.business.requests.city.UpdateCityRequest;
 import kodlama.io.rentACar.business.responses.city.GetAllCityResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.CityRepository;
 import kodlama.io.rentACar.entities.concretes.City;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -28,6 +30,7 @@ public class CityManager implements CityService {
         return cityResponse;
     }
 
+
     @Override
     public void add(CreateCityRequest createCityRequest){
     City city = this.modelMapperService.forRequest().map(createCityRequest, City.class);
@@ -35,12 +38,14 @@ public class CityManager implements CityService {
     }
 
     @Override
-    public void delete() {
-
+    public void delete(@PathVariable int id) {
+        this.cityRepository.deleteById(id);
     }
 
     @Override
-    public void update() {
+    public void update(UpdateCityRequest updateCityRequest) {
+        City city = this.modelMapperService.forRequest().map(updateCityRequest, City.class);
+        this.cityRepository.save(city);
 
     }
 }

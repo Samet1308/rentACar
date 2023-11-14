@@ -12,4 +12,6 @@ public class UpdateColorRequest {
 
     @NotNull
     private int colorId;
+
+    private String colorName;
 }

@@ -2,7 +2,7 @@ package kodlama.io.rentACar.business.abstracts;
 
 import kodlama.io.rentACar.business.requests.customer.CreateCustomerRequest;
 import kodlama.io.rentACar.business.requests.customer.UpdateCustomerRequest;
-import kodlama.io.rentACar.business.responses.customer.GetAllCustomersResponse;
+import kodlama.io.rentACar.business.dto.customer.GetAllCustomersResponse;
 
 import java.util.List;
 

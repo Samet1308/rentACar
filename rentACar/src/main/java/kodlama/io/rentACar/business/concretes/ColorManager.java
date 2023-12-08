@@ -3,7 +3,7 @@ package kodlama.io.rentACar.business.concretes;
 import kodlama.io.rentACar.business.abstracts.ColorService;
 import kodlama.io.rentACar.business.requests.color.CreateColorRequest;
 import kodlama.io.rentACar.business.requests.color.UpdateColorRequest;
-import kodlama.io.rentACar.business.responses.color.GetAllColorResponse;
+import kodlama.io.rentACar.business.dto.color.GetAllColorResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.ColorRepository;
 import kodlama.io.rentACar.entities.concretes.Color;

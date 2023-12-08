@@ -2,7 +2,7 @@ package kodlama.io.rentACar.business.abstracts;
 
 import kodlama.io.rentACar.business.requests.rentalCar.CreateRentalCarRequest;
 import kodlama.io.rentACar.business.requests.rentalCar.UpdateRentalCarRequest;
-import kodlama.io.rentACar.business.responses.rentalCar.GetAllRentalCarResponse;
+import kodlama.io.rentACar.business.dto.rentalCar.GetAllRentalCarResponse;
 
 import java.util.List;
 

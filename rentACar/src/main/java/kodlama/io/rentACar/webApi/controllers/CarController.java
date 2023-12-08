@@ -3,7 +3,7 @@ package kodlama.io.rentACar.webApi.controllers;
 import kodlama.io.rentACar.business.abstracts.CarService;
 import kodlama.io.rentACar.business.requests.car.CreateCarRequest;
 import kodlama.io.rentACar.business.requests.car.UpdateCarRequest;
-import kodlama.io.rentACar.business.responses.car.GetAllCarResponse;
+import kodlama.io.rentACar.business.dto.car.GetAllCarResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

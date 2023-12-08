@@ -1,13 +1,10 @@
 package kodlama.io.rentACar.webApi.controllers;
 
 import jakarta.validation.Valid;
-import kodlama.io.rentACar.business.abstracts.CustomerService;
 import kodlama.io.rentACar.business.abstracts.RentalCarService;
-import kodlama.io.rentACar.business.requests.customer.CreateCustomerRequest;
 import kodlama.io.rentACar.business.requests.rentalCar.CreateRentalCarRequest;
 import kodlama.io.rentACar.business.requests.rentalCar.UpdateRentalCarRequest;
-import kodlama.io.rentACar.business.responses.customer.GetAllCustomersResponse;
-import kodlama.io.rentACar.business.responses.rentalCar.GetAllRentalCarResponse;
+import kodlama.io.rentACar.business.dto.rentalCar.GetAllRentalCarResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

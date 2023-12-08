@@ -3,7 +3,7 @@ package kodlama.io.rentACar.business.concretes;
 import kodlama.io.rentACar.business.abstracts.RentalCarService;
 import kodlama.io.rentACar.business.requests.rentalCar.CreateRentalCarRequest;
 import kodlama.io.rentACar.business.requests.rentalCar.UpdateRentalCarRequest;
-import kodlama.io.rentACar.business.responses.rentalCar.GetAllRentalCarResponse;
+import kodlama.io.rentACar.business.dto.rentalCar.GetAllRentalCarResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.RentalCarRepository;
 import kodlama.io.rentACar.entities.concretes.RentalCar;

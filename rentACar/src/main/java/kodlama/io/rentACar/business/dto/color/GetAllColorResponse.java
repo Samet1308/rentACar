@@ -1,13 +1,10 @@
-package kodlama.io.rentACar.business.responses.color;
+package kodlama.io.rentACar.business.dto.color;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import kodlama.io.rentACar.entities.concretes.Color;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 @Data
 @AllArgsConstructor

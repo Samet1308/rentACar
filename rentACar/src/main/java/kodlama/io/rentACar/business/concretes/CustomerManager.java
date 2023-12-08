@@ -3,7 +3,7 @@ package kodlama.io.rentACar.business.concretes;
 import kodlama.io.rentACar.business.abstracts.CustomerService;
 import kodlama.io.rentACar.business.requests.customer.CreateCustomerRequest;
 import kodlama.io.rentACar.business.requests.customer.UpdateCustomerRequest;
-import kodlama.io.rentACar.business.responses.customer.GetAllCustomersResponse;
+import kodlama.io.rentACar.business.dto.customer.GetAllCustomersResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.CustomerRepository;
 import kodlama.io.rentACar.entities.concretes.Customer;

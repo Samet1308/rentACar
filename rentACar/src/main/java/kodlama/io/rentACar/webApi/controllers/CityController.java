@@ -4,7 +4,7 @@ import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.CityService;
 import kodlama.io.rentACar.business.requests.city.CreateCityRequest;
 import kodlama.io.rentACar.business.requests.city.UpdateCityRequest;
-import kodlama.io.rentACar.business.responses.city.GetAllCityResponse;
+import kodlama.io.rentACar.business.dto.city.GetAllCityResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

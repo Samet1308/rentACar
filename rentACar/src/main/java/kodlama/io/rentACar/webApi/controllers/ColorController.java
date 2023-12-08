@@ -4,7 +4,7 @@ import jakarta.validation.Valid;
 import kodlama.io.rentACar.business.abstracts.ColorService;
 import kodlama.io.rentACar.business.requests.color.CreateColorRequest;
 import kodlama.io.rentACar.business.requests.color.UpdateColorRequest;
-import kodlama.io.rentACar.business.responses.color.GetAllColorResponse;
+import kodlama.io.rentACar.business.dto.color.GetAllColorResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

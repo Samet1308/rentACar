@@ -2,7 +2,7 @@ package kodlama.io.rentACar.business.abstracts;
 
 import kodlama.io.rentACar.business.requests.model.CreateModelRequest;
 import kodlama.io.rentACar.business.requests.model.UpdateModelRequest;
-import kodlama.io.rentACar.business.responses.model.GetAllModelsResponse;
+import kodlama.io.rentACar.business.dto.model.GetAllModelsResponse;
 
 import java.util.List;
 

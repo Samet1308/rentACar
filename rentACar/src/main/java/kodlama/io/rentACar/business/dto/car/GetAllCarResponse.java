@@ -1,4 +1,4 @@
-package kodlama.io.rentACar.business.responses.car;
+package kodlama.io.rentACar.business.dto.car;
 
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
@@ -46,5 +46,5 @@ public class GetAllCarResponse {
 
     @NotNull
     @NotBlank
-    private int colorId;
+    private String colorName;
 }

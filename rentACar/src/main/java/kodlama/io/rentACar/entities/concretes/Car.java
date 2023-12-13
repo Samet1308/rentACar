@@ -27,8 +27,12 @@ public class Car {
     @Column(name = "model_year")
     private int modelYear;
 
-    @Column(name = "state")
-    private int state;
+    @Column(name = "state_id")
+    private Boolean stateId;
+
+    @Column(name = "state_name")
+    private String stateName;
+
 
     @ManyToOne
     @JoinColumn(name = "model_id")

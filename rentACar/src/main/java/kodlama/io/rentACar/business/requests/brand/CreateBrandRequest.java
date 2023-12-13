@@ -16,4 +16,8 @@ public class CreateBrandRequest {
     @Size(min = 3,max = 20)
     private String name;
 
+    @NotNull
+    @NotBlank
+    private String brandId;
+
 }

@@ -29,7 +29,8 @@ public class CreateCarRequest {
 
     @NotNull
     @NotBlank
-    private int state;
+    private Boolean stateId;
+
 
     @NotNull
     @NotBlank

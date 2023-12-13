@@ -13,6 +13,10 @@ public class BrandBusinessRules {
         if(this.brandRepository.existsByName(name)){
             throw new BusinessException("Brand name already exists");
         }
-
+    }
+    public void checkIfBrandIdExists(int brandId){
+        if(this.brandRepository.existsById(brandId)){
+            throw new BusinessException("Brand id already exist");
+        }
     }
 }

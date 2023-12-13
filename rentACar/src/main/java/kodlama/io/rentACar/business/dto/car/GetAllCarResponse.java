@@ -42,7 +42,7 @@ public class GetAllCarResponse {
 
     @NotNull
     @NotBlank
-    private int state;
+    private String stateName;
 
     @NotNull
     @NotBlank

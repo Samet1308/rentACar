@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,6 +33,7 @@ public class CustomerManager implements CustomerService {
     }
     @Override
     public void add(CreateCustomerRequest createCustomerRequest){
+
         Customer customer = this.modelMapperService.forRequest().map(createCustomerRequest, Customer.class);
         this.customerRepository.save(customer);
     }
@@ -42,6 +44,7 @@ public class CustomerManager implements CustomerService {
     }
     @Override
     public void update(UpdateCustomerRequest updateCustomerRequest){
+
         Customer customer = this.modelMapperService.forRequest().map(updateCustomerRequest, Customer.class);
         this.customerRepository.save(customer);
     }

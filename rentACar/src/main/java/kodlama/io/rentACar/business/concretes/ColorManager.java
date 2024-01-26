@@ -23,16 +23,15 @@ public class ColorManager implements ColorService {
     @Override
     public List<GetAllColorResponse> getAll() {
         List<Color> colors = this.colorRepository.findAll();
-
-        List<GetAllColorResponse> colorResponse = colors.stream().map(color -> this.modelMapperService.forResponse()
-                .map(color, GetAllColorResponse.class)).collect(Collectors.toList());
-
-        return colorResponse;
+        List<GetAllColorResponse> colorsResponse = colors.stream()
+                .map(color -> this.modelMapperService.forResponse()
+                        .map(color,GetAllColorResponse.class)).collect(Collectors.toList());
+        return colorsResponse;
     }
 
     @Override
     public void add(CreateColorRequest createColorRequest) {
-        Color color = this.modelMapperService.forRequest().map(createColorRequest,Color.class);
+        Color color = this.modelMapperService.forRequest().map(createColorRequest, Color.class);
         this.colorRepository.save(color);
     }
 

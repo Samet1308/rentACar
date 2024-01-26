@@ -6,10 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class UpdateCustomerRequest {
 
     @NotNull
@@ -17,4 +18,6 @@ public class UpdateCustomerRequest {
     private int customerId;
 
     private String customerName;
+
+    private LocalDateTime registrationDate= LocalDateTime.now();
 }

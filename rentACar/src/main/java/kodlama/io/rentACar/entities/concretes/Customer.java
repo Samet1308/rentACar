@@ -27,4 +27,7 @@ public class Customer {
     @Column(name = "registration_date")
     private LocalDate registrationDate;
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "customer_score")
+    private Long customerScore = 100L;
 }

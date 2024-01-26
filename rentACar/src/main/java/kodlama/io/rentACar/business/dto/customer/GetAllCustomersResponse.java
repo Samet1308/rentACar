@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -13,5 +14,6 @@ public class GetAllCustomersResponse {
 
     private int customerId;
     private String customerName;
-    private LocalDate registrationDate;
+    private LocalDateTime registrationDate;
+    private Long customerScore = 100L;
 }

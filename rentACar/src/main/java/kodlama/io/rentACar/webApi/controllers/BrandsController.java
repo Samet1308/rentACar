@@ -22,7 +22,7 @@ public class BrandsController {
     public List<GetAllBrandsResponse> getAll(){
         return brandService.getAll();
     }
-    @PostMapping ()
+    @PostMapping()
     @ResponseStatus(code= HttpStatus.CREATED)
     public void add(@RequestBody @Valid CreateBrandRequest createBrandRequest){
         this.brandService.add(createBrandRequest);
